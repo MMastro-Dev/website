@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 282" fill="#f7f4f2">
+
+  <!-- ===== CROWN: 5-pearl noble crown ===== -->
+  <!-- base band -->
+  <rect x="82" y="64" width="116" height="12" rx="3"/>
+  <!-- outer left post + pearl -->
+  <rect x="89" y="45" width="8" height="20" rx="2"/>
+  <circle cx="93" cy="38" r="7"/>
+  <!-- inner left post + pearl -->
+  <rect x="112" y="33" width="9" height="32" rx="2"/>
+  <circle cx="116.5" cy="25" r="8"/>
+  <!-- center post + pearl (tallest) -->
+  <rect x="136" y="22" width="8" height="43" rx="2"/>
+  <circle cx="140" cy="12" r="10"/>
+  <!-- inner right post + pearl -->
+  <rect x="159" y="33" width="9" height="32" rx="2"/>
+  <circle cx="163.5" cy="25" r="8"/>
+  <!-- outer right post + pearl -->
+  <rect x="183" y="45" width="8" height="20" rx="2"/>
+  <circle cx="187" cy="38" r="7"/>
+
+  <!-- ===== EAGLE ===== -->
+
+  <!-- Head: single, facing right -->
+  <ellipse cx="157" cy="100" rx="15" ry="13"/>
+  <!-- Beak: hooked upper mandible -->
+  <path d="M 171,96 C 182,95 190,99 189,105 C 188,110 180,113 171,110 Z"/>
+
+  <!-- Neck: narrow at head (top), wide at chest (bottom) — correct taper -->
+  <path d="M 152,112 C 148,126 143,137 137,147 L 154,147 C 155,137 159,126 163,112 Z"/>
+
+  <!-- Body -->
+  <ellipse cx="140" cy="172" rx="22" ry="28"/>
+
+  <!-- Left wing: sweeps upward, 3 primary feather bumps on trailing edge -->
+  <path d="
+    M 120,163
+    C 93,143 62,114 38,90
+    C 26,78 8,80 6,97
+    C 7,112 13,124 20,130
+    C 15,139 17,150 24,153
+    C 20,162 26,172 38,172
+    C 35,180 45,186 58,182
+    C 76,192 98,194 118,192
+    Z
+  "/>
+
+  <!-- Right wing: mirror of left -->
+  <path d="
+    M 160,163
+    C 187,143 218,114 242,90
+    C 254,78 272,80 274,97
+    C 273,112 267,124 260,130
+    C 265,139 263,150 256,153
+    C 260,162 254,172 242,172
+    C 245,180 235,186 222,182
+    C 204,192 182,194 162,192
+    Z
+  "/>
+
+  <!-- Tail: 5 individual feathers fanning from base -->
+  <ellipse cx="140" cy="230" rx="5" ry="40"/>
+  <ellipse cx="140" cy="230" rx="5" ry="38" transform="rotate(-14,140,196)"/>
+  <ellipse cx="140" cy="230" rx="5" ry="38" transform="rotate(14,140,196)"/>
+  <ellipse cx="140" cy="230" rx="5" ry="35" transform="rotate(-28,140,196)"/>
+  <ellipse cx="140" cy="230" rx="5" ry="35" transform="rotate(28,140,196)"/>
+
+  <!-- Left leg -->
+  <rect x="128" y="197" width="8" height="22" rx="2"/>
+  <!-- Left talons: 4 forward + 1 rear -->
+  <path d="M 127,219 C 116,224 105,229 100,237 L 103,240 C 109,232 119,228 129,222 Z"/>
+  <path d="M 129,221 C 124,231 120,241 121,250 L 124,250 C 124,241 128,231 132,222 Z"/>
+  <path d="M 133,221 C 133,231 134,241 136,249 L 139,248 C 137,240 136,230 134,222 Z"/>
+  <path d="M 135,219 C 141,228 147,234 151,238 L 153,235 C 149,231 143,225 137,219 Z"/>
+  <path d="M 128,219 C 121,213 114,209 109,209 L 109,212 C 114,212 121,216 127,221 Z"/>
+
+  <!-- Right leg -->
+  <rect x="144" y="197" width="8" height="22" rx="2"/>
+  <!-- Right talons: 4 forward + 1 rear -->
+  <path d="M 153,219 C 164,224 175,229 180,237 L 177,240 C 171,232 161,228 151,222 Z"/>
+  <path d="M 151,221 C 156,231 160,241 159,250 L 156,250 C 156,241 152,231 148,222 Z"/>
+  <path d="M 147,221 C 147,231 146,241 144,249 L 141,248 C 143,240 144,230 146,222 Z"/>
+  <path d="M 145,219 C 139,228 133,234 129,238 L 127,235 C 131,231 137,225 143,219 Z"/>
+  <path d="M 152,219 C 159,213 166,209 171,209 L 171,212 C 166,212 159,216 153,221 Z"/>
+
+</svg>
