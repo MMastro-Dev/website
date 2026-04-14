@@ -1,6 +1,7 @@
+
 import { NavigationButtonList } from "./components/Navigation"
 
-function App() {
+function App(): React.ReactElement {
   return (
     <>
       <div className="w-fit [flex:0.6] bg-sea-blue bg-[url('/assets/Images/dark-leather.png')]">
@@ -17,14 +18,13 @@ function App() {
             src="/assets/Images/logo.svg"
             alt="logo"
           /> */}
-          <h1>Title</h1>
-          <h2>Subtitle</h2>
+          <h1>Maximilian Mastrogiacomo</h1>
+          <h2>Software Developer</h2>
           <p className="mx-[25%] text-justify">
-            Hello and welcome! This is the main page of my personal
-            homeserver&mdash;a space for experimentation, learning, and sharing.
-            If you&apos;re here intentionally, feel free to explore my projects
+            Hello and welcome! This is my personal website, here you can get to know me and my work.
+            If you&apos;re here intentionally, feel free to explore my projects and check out my blog for insights or tutorials on what i do.
             and resources. If you&apos;ve arrived by chance, enjoy your stay and
-            have a look around!
+            have a look around! Keep in mind it's all WIP still, so expect some changes and updates in the future.
           </p>
         </div>
         <NavigationButtonList items={[
