@@ -24,6 +24,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Install rsync
+        run: sudo apt-get install -y rsync
+
       - name: Deploy to server
         run: |
           mkdir -p ~/.ssh
