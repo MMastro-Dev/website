@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: Install rsync
-        run: sudo apt-get install -y rsync
+        run: sudo apt install -y rsync
 
       - name: Deploy to server
         run: |
