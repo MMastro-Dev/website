@@ -30,7 +30,7 @@ jobs:
       - name: Deploy to server
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          echo "${{ secrets.SSH_PRIVATE_KEY_MASTROSITE }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H 172.17.0.1 >> ~/.ssh/known_hosts
-          rsync -avz --delete dist/ gitea-runner@172.17.0.1:/var/www/html/mastrosite/
+          rsync -avz --delete -e "ssh -i ~/.ssh/id_ed25519" dist/ gitea-runner@172.17.0.1:/
