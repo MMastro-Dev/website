@@ -12,11 +12,11 @@ function App() {
       </div>
       <main className="w-full flex-1 flex flex-col justify-center items-center text-white bg-[url('/assets/Images/cartographer.png')]">
         <div className="flex flex-col gap-5 items-center h-fit">
-          <img
+          {/* <img
             className="w-30 h-30 object-cover rounded-full border-4 border-white shadow-[0_2px_8px_rgba(0,0,0,0.15)] block mx-auto mb-6"
             src="/assets/Images/logo.svg"
             alt="logo"
-          />
+          /> */}
           <h1>Title</h1>
           <h2>Subtitle</h2>
           <p className="mx-[25%] text-justify">
