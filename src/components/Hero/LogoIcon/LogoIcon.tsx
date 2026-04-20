@@ -7,7 +7,7 @@ export const LogoIcon: React.FC<LogoIconProps> = ({
 }) => {
     return (
         <img
-            className="md:size-[256px] size-[128px]  object-cover rounded-full border-4 border-white"
+            className="md:size-[256px] size-[128px]  2xl:size-[512px] object-cover rounded-full border-4 border-white"
             src={imageSrc}
             alt={imageAlt}
         />
