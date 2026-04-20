@@ -1,39 +1,30 @@
 
-import { NavigationButtonList } from "./components/Navigation"
+import { useRef } from "react"
+import { Placeholder } from "./components/Placeholder"
+import { HeroPage } from "./components/Hero"
+import PlaceholderLove from "./components/Placeholder/PlaceholderLove"
 
 function App(): React.ReactElement {
+  const placeholderRef = useRef<HTMLDivElement>(null)
+
+  const handleScrollToNext = () => {
+    placeholderRef.current?.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
+  }
+
   return (
-    <>
-      <div className="w-fit [flex:0.6] bg-sea-blue bg-[url('/assets/Images/dark-leather.png')]">
-        <img
-          className="w-fit h-screen object-cover"
-          src="/assets/Images/_DSC1311.jpg"
-          alt="cover"
-        />
-      </div>
-      <main className="w-full flex-1 flex flex-col justify-center items-center text-white bg-[url('/assets/Images/cartographer.png')]">
-        <div className="flex flex-col gap-5 items-center h-fit">
-          {/* <img
-            className="w-30 h-30 object-cover rounded-full border-4 border-white shadow-[0_2px_8px_rgba(0,0,0,0.15)] block mx-auto mb-6"
-            src="/assets/Images/logo.svg"
-            alt="logo"
-          /> */}
-          <h1>Maximilian Mastrogiacomo</h1>
-          <h2>Software Developer</h2>
-          <p className="mx-[25%] text-justify">
-            Hello and welcome! This is my personal website, here you can get to know me and my work.
-            If you&apos;re here intentionally, feel free to explore my projects and check out my blog for insights or tutorials on what i do.
-            and resources. If you&apos;ve arrived by chance, enjoy your stay and
-            have a look around! Keep in mind it's all WIP still, so expect some changes and updates in the future.
-          </p>
-        </div>
-        <NavigationButtonList items={[
-          { href: "https://cv.mmastro.dev", label: "My CV" },
-          { href: "https://blog.mmastro.dev", label: "My Blog" },
-          { href: "mailto:maximilian.mastrogiacomo@gmail.com", label: "Contact Me" }
-        ]} />
+    <div className="w-full h-full flex flex-col md:flex-row overflow-y-auto md:overflow-y-hidden overflow-x-hidden md:overflow-x-auto">
+      <main className="flex-shrink-0 w-full md:w-screen h-full flex flex-col justify-center gap-50 items-center text-white bg-[url('/assets/Images/cartographer.png')]">
+      <HeroPage text="Hi!, I'm Maximilian Mastrogiacomo" items={[
+            { href: "https://cv.mmastro.dev", label: "My CV" },
+            { href: "https://blog.mmastro.dev", label: "My Blog" },
+            { href: "mailto:maximilian.mastrogiacomo@gmail.com", label: "Contact Me" },
+            { label: "TEST", arrow: true, onClick: handleScrollToNext }
+          ]} />
       </main>
-    </>
+      <div ref={placeholderRef} className="flex-shrink-0 w-full md:w-screen h-full">
+        <PlaceholderLove />
+      </div>
+    </div>
   )
 }
 

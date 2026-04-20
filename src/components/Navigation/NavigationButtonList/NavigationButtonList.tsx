@@ -5,9 +5,9 @@ const NavigationButtonList: React.FC<NavigationButtonListProps> = ({
   items,
 }) => {
   return (
-    <div className="flex gap-10 mt-5">
+    <div className="flex gap-2 sm:gap-5 md:gap-10 md:mt-5">
       {items.map((item, index) => (
-        <NavigationButton key={index} href={item.href} label={item.label} />
+        <NavigationButton key={index} {...item} />
       ))}
     </div>
   );
