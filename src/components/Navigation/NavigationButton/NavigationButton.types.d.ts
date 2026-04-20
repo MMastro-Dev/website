@@ -1,6 +1,8 @@
 export interface NavigationButtonProps {
-  href: string;
+  href?: string;
   label: string;
   className?: string;
   icon?: React.ReactNode;
+  arrow?: boolean;
+  onClick?: () => void;
 }

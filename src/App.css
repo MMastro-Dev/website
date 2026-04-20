@@ -3,6 +3,7 @@
 html,
 body {
   width: 100%;
+  height: 100%;
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden;
@@ -13,5 +14,5 @@ body {
 #root {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }

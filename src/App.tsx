@@ -1,30 +1,30 @@
 
-import { LogoIcon } from "./components/Hero"
-import { NavigationButtonList } from "./components/Navigation"
+import { useRef } from "react"
+import { Placeholder } from "./components/Placeholder"
+import { HeroPage } from "./components/Hero"
+import PlaceholderLove from "./components/Placeholder/PlaceholderLove"
 
 function App(): React.ReactElement {
+  const placeholderRef = useRef<HTMLDivElement>(null)
+
+  const handleScrollToNext = () => {
+    placeholderRef.current?.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
+  }
+
   return (
-    <>
-      {/* <div className="w-fit [flex:0.6] bg-sea-blue bg-[url('/assets/Images/dark-leather.png')]">
-        <img
-          className="w-fit h-screen object-cover"
-          src="/assets/Images/_DSC1311.jpg"
-          alt="cover"
-        />
-      </div> */}
-      <main className="w-full flex-1 flex flex-col justify-center gap-50 items-center text-white bg-[url('/assets/Images/cartographer.png')]">
-        <div className="flex flex-col gap-5 sm:gap-10 2xl:gap-20 items-end md:items-center text-right md:text-center mr-10 ml-5 md:mr-0 md:ml-0">
-          <LogoIcon imageSrc="/assets/Images/logo.png" imageAlt="logo" />
-          <h1 className="text-4xl sm:text-5xl 2xl:text-8xl" >Hi!, I'm Maximilian Mastrogiacomo</h1>
-          <NavigationButtonList items={[
+    <div className="w-full h-full flex flex-col md:flex-row overflow-y-auto md:overflow-y-hidden overflow-x-hidden md:overflow-x-auto">
+      <main className="flex-shrink-0 w-full md:w-screen h-full flex flex-col justify-center gap-50 items-center text-white bg-[url('/assets/Images/cartographer.png')]">
+      <HeroPage text="Hi!, I'm Maximilian Mastrogiacomo" items={[
             { href: "https://cv.mmastro.dev", label: "My CV" },
             { href: "https://blog.mmastro.dev", label: "My Blog" },
             { href: "mailto:maximilian.mastrogiacomo@gmail.com", label: "Contact Me" },
-            { href: "" , label:"TEST"}
+            { label: "TEST", arrow: true, onClick: handleScrollToNext }
           ]} />
-        </div>
       </main>
-    </>
+      <div ref={placeholderRef} className="flex-shrink-0 w-full md:w-screen h-full">
+        <PlaceholderLove />
+      </div>
+    </div>
   )
 }
 
