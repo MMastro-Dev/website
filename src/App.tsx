@@ -18,11 +18,11 @@ function App(): React.ReactElement {
             { href: "https://cv.mmastro.dev", label: "My CV" },
             { href: "https://blog.mmastro.dev", label: "My Blog" },
             { href: "mailto:maximilian.mastrogiacomo@gmail.com", label: "Contact Me" },
-            { label: "TEST", arrow: true, onClick: handleScrollToNext }
+            { label: "", arrow: true, onClick: handleScrollToNext }
           ]} />
       </main>
       <div ref={placeholderRef} className="flex-shrink-0 w-full md:w-screen h-full">
-        <PlaceholderLove />
+        <Placeholder />
       </div>
     </div>
   )
