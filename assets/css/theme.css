@@ -3,17 +3,24 @@
 @theme {
   --color-white: #f7f4f2;
   --color-sea-blue: #284259;
-  --color-sea-blue-dark: #223a4f;
-  --color-sky-blue: #a9c6d9;
-  --color-land-green: #262401;
-  --color-grass-yellow-dark: #8c582a;
-  --color-grass-yellow: #cc9554;
-  --color-sand-yellow: #f2bc79;
-  --color-gradient-light: #a6bdcf;
-  --color-gradient-middle: #2f4a67;
-  --color-gradient-dark: #1e1a0e;
-  --color-sea-blue-light: #32689c;
-  --color-grass-green: #525510;
-  --color-grass-olive: #775a30;
-  --color-grass-green-dark: #0d1313;
+  --color-green: #44AF69;
+  --color-red: #C84B42;
+  --color-yellow: #E1A05C;
+  --color-mint-green: #61C9A8;
+
+
+  --breakpoint-*: initial;
+  --breakpoint-xs: 22rem;
+  --breakpoint-sm: 30rem;
+  --breakpoint-tb: 48rem;
+  --breakpoint-md: 64rem;
+  --breakpoint-lg: 80rem;
+  --breakpoint-xl: 96rem;
+
+  --animate-float: float 2.8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
 }

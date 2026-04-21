@@ -1,8 +1,9 @@
+import React from "react";
+
 export interface NavigationButtonProps {
   href?: string;
-  label: string;
+  label: React.ReactNode;
   className?: string;
-  icon?: React.ReactNode;
-  arrow?: boolean;
+  additionalClassName?: string;
   onClick?: () => void;
 }
