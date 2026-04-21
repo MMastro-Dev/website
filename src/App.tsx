@@ -2,7 +2,6 @@
 import { useRef } from "react"
 import { Placeholder } from "./components/Placeholder"
 import { HeroPage } from "./components/Hero"
-import PlaceholderLove from "./components/Placeholder/PlaceholderLove"
 import ScrollDownIndicator from "./components/ScrollDownIndicator/ScrollDownIndicator"
 const ArrowIcon: React.FC = () => (
   <svg
