@@ -1,5 +1,8 @@
-import NavigationButton from "../NavigationButton/NavigationButton";
-import { NavigationButtonListProps } from "./NavigationButtonList.types.d";
+import NavigationButton, { NavigationButtonProps } from "../NavigationButton/NavigationButton";
+
+interface NavigationButtonListProps {
+    items: NavigationButtonProps[];
+}
 
 const NavigationButtonList: React.FC<NavigationButtonListProps> = ({
   items,

@@ -1,5 +1,11 @@
-import { NavigationButtonProps } from "./NavigationButton.types.d";
 
+export interface NavigationButtonProps {
+  href?: string;
+  label: React.ReactNode;
+  className?: string;
+  additionalClassName?: string;
+  onClick?: () => void;
+}
 
 const NavigationButton: React.FC<NavigationButtonProps> = ({
   href,

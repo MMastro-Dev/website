@@ -1,6 +1,12 @@
 import { LogoIcon } from ".."
 import { NavigationButtonList } from "../../Navigation"
-import { HeroPageProps } from "./HeroPage.types.d"
+import { NavigationButtonProps } from "../../Navigation/NavigationButton/NavigationButton";
+
+interface HeroPageProps {
+    text: string;
+    subtitle?: string;
+    items: NavigationButtonProps[];
+}
 
 const HeroPage: React.FC<HeroPageProps> = ({ text, subtitle, items }) => {
     return (

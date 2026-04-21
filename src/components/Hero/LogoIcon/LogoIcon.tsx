@@ -1,5 +1,9 @@
 import React from 'react';
-import { LogoIconProps } from './LogoIcon.types.d';
+
+interface LogoIconProps {
+    imageSrc?: string;
+    imageAlt?: string;
+}
 
 export const LogoIcon: React.FC<LogoIconProps> = ({
     imageSrc = '/assets/Images/logo.png',

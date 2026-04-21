@@ -10,12 +10,14 @@
 
 
   --breakpoint-*: initial;
-  --breakpoint-xs: 22rem;
+  --breakpoint-xs: 20rem;
   --breakpoint-sm: 30rem;
   --breakpoint-tb: 48rem;
   --breakpoint-md: 64rem;
   --breakpoint-lg: 80rem;
   --breakpoint-xl: 96rem;
+
+  --breakpoint-custom-nav: 27rem;
 
   --animate-float: float 2.8s ease-in-out infinite;
 }
