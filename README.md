@@ -2,7 +2,7 @@
 
 This is the repo for my personal website. A mobile-first landing page for showcasing my portfolio. It uses the front-end tech stack I'm most comfortable with:
 
-![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?style=flat-square&logo=typescript&logoColor=white)![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)![Gitea Actions](https://img.shields.io/badge/Gitea_Actions-CI%2FCD-609926?style=flat-square&logo=gitea&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)        ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?style=flat-square&logo=typescript&logoColor=white)        ![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)        ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)        ![Gitea Actions](https://img.shields.io/badge/Gitea_Actions-CI%2FCD-609926?style=flat-square&logo=gitea&logoColor=white)
 
 > [mmastro.dev](https://mmastro.dev) — self-hosted and auto-deployed.
 
@@ -60,11 +60,11 @@ Every push to `main` automatically builds and deploys the site via **Gitea Actio
 
 ```mermaid
 flowchart LR
-    A[git push\nto main] --> B[Gitea Actions\ntriggered]
-    B --> C[Node 20\nnpm ci]
-    C --> D[vite build\n→ dist/]
-    D --> E[rsync over SSH\n--delete]
-    E --> F[Live at\nmmastro.dev]
+    A[git push to main] --> B[Gitea Actions triggered]
+    B --> C[Node 20 npm ci]
+    C --> D[vite build to dist/]
+    D --> E[rsync over SSH --delete]
+    E --> F[Live at mmastro.dev]
 ```
 
 **Pipeline steps** ([`.gitea/workflows/deploy.yml`](.gitea/workflows/deploy.yml)):
@@ -85,9 +85,9 @@ The entire stack runs on a self-owned **bare-metal Linux server**.
 
 ```mermaid
 flowchart LR
-    Dev[Developer] -->|git push| G[Gitea\nDocker container]
-    G -->|triggers| R[Gitea Runner\nDocker container]
-    R -->|rsync + SSH| H[Linux Host\n/var/www/html/mastrosite/]
+    Dev[Developer] -->|git push| G[Gitea Docker container]
+    G -->|triggers| R[Gitea Runner Docker container]
+    R -->|rsync + SSH| H[Linux Host /var/www/html/mastrosite/]
     H -->|serves| S[mmastro.dev]
 ```
 
