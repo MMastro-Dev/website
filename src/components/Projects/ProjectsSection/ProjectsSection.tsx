@@ -2,20 +2,20 @@ import ProjectCard, { ProjectCardProps } from "../ProjectCard/ProjectCard";
 
 const PROJECTS: ProjectCardProps[] = [
   {
+    title: "mmastro.dev",
+    description:
+      "This website. React + TypeScript frontend, Tailwind v4, deployed via Gitea CI/CD.",
+    stack: ["React", "TypeScript", "Tailwind v4", "Vite"],
+    status: "live",
+    repoHref: "https://github.com/MMastro-Dev/website",
+  },
+  {
     title: "CV Matching Tool",
     description:
       "A React form that submits a job posting to a FastAPI + LLM backend, generates a tailored CV, and publishes it to cv.mmastro.dev.",
     stack: ["React", "TypeScript", "FastAPI", "PostgreSQL", "LLM APIs", "RAG"],
     status: "in-dev",
     featured: true,
-  },
-  {
-    title: "mmastro.dev",
-    description:
-      "This site. React + TypeScript frontend, Tailwind v4, deployed via Gitea CI/CD with strict TypeScript and zero any.",
-    stack: ["React", "TypeScript", "Tailwind v4", "Vite"],
-    status: "live",
-    repoHref: "https://github.com/MMastro-Dev/website",
   },
   {
     title: "FastAPI AI Service",
@@ -25,9 +25,9 @@ const PROJECTS: ProjectCardProps[] = [
     status: "in-dev",
   },
   {
-    title: "Homelab & Infrastructure",
+    title: "Self-owned Infrastructure",
     description:
-      "Self-hosted stack: Caddy reverse proxy, oauth2-proxy + Pocket ID (passkeys), Gitea, Hugo sites, and monitoring. Details on the blog.",
+      "My own infrastructure: Caddy reverse proxy, oauth2-proxy + Pocket ID (passkeys), Gitea, Hugo sites, and monitoring. Details on the blog.",
     stack: ["Caddy", "Docker", "Gitea CI/CD", "Hugo", "oauth2-proxy", "Linux"],
     status: "live",
     blogHref: "https://blog.mmastro.dev",

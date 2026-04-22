@@ -7,8 +7,8 @@ interface Fact {
 
 const FACTS: Fact[] = [
   { label: "Experience", value: "5+ years · React · TypeScript · Python" },
-  { label: "Current role", value: "AlmavivA — INPS & Agenzia delle Entrate" },
-  { label: "Focus areas", value: "WCAG accessibility · Testing · AI integration" },
+  { label: "Current role", value: "AlmavivA — Consultant for INPS" },
+  { label: "Focus areas", value: "Front-End development · WCAG accessibility · Testing" },
   { label: "Location", value: "Rome, Italy" },
 ];
 
@@ -24,8 +24,8 @@ const AboutSection: React.FC = () => {
           <p className="text-base sm:text-lg 2xl:text-2xl leading-relaxed text-white/80">
             {/* TODO: rewrite positioning paragraph. Placeholder below. */}
             Software developer based in Rome, currently shipping React & TypeScript frontends used by millions
-            of Italian citizens. Open to remote roles internationally. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            of Italian citizens. Experienced in working in international teams and coordinating remotely.
+            Looking to upskill to solution architect, with a focus on AI integration.
           </p>
           <div className="flex flex-col gap-5 sm:gap-6">
             {FACTS.map((fact) => (
