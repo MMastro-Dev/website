@@ -16,6 +16,7 @@ const PROJECTS: ProjectCardProps[] = [
     stack: ["React", "TypeScript", "FastAPI", "PostgreSQL", "LLM APIs", "RAG"],
     status: "in-dev",
     featured: true,
+    href: "https://cv.mmastro.dev/form",
   },
   {
     title: "FastAPI AI Service",
