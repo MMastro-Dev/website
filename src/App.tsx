@@ -31,7 +31,7 @@ function App(): React.ReactElement {
   const itemList = [
     { href: "https://cv.mmastro.dev", label: <span>My CV</span>, additionalClassName: "max-custom-nav:hidden" },
     { onClick: () => scrollTo(projectsRef), label: <span>Projects</span>, additionalClassName: "max-custom-nav:hidden" },
-    { href: "https://blog.mmastro.dev", label: <span>My Blog</span>, additionalClassName: "max-custom-nav:hidden" },
+    // { href: "https://blog.mmastro.dev", label: <span>My Blog</span>, additionalClassName: "max-custom-nav:hidden" },
     { onClick: () => scrollTo(connectRef), label: <span>Let's Connect</span>, additionalClassName: "max-custom-nav:hidden" },
     { onClick: () => scrollTo(projectsRef), label: <ArrowIcon />, additionalClassName: "max-custom-nav:hidden text-sea-blue! bg-white!" },
   ];
@@ -40,7 +40,7 @@ function App(): React.ReactElement {
   const itemListSmall = [
     { href: "https://cv.mmastro.dev", label: <span>CV</span>, additionalClassName: "hidden max-custom-nav:flex" },
     { onClick: () => scrollTo(projectsRef), label: <span>Projects</span>, additionalClassName: "hidden max-custom-nav:flex" },
-    { href: "https://blog.mmastro.dev", label: <span>Blog</span>, additionalClassName: "hidden max-custom-nav:flex" },
+    // { href: "https://blog.mmastro.dev", label: <span>Blog</span>, additionalClassName: "hidden max-custom-nav:flex" },
     { onClick: () => scrollTo(connectRef), label: <span>Connect</span>, additionalClassName: "hidden max-custom-nav:flex" },
   ];
 

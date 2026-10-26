@@ -11,7 +11,7 @@ const CTAS: Cta[] = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/maximilian-mastrogiacomo-716725179/", primary: true },
   { label: "GitHub", href: "https://github.com/MMastro-Dev", primary: true },
   { label: "Download CV", href: "https://cv.mmastro.dev/cv.pdf", primary: false },
-  { label: "Blog", href: "https://blog.mmastro.dev", primary: false },
+  // { label: "Blog", href: "https://blog.mmastro.dev", primary: false },
 ];
 
 const BASE_CLASS = "w-full justify-center text-base sm:text-lg 2xl:text-2xl py-3 sm:py-4 2xl:py-6";

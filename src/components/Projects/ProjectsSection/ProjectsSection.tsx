@@ -28,10 +28,10 @@ const PROJECTS: ProjectCardProps[] = [
   {
     title: "Self-owned Infrastructure",
     description:
-      "My own infrastructure: Caddy reverse proxy, oauth2-proxy + Pocket ID (passkeys), Gitea, Hugo sites, and monitoring. Details on the blog.",
+      "My own infrastructure: Caddy reverse proxy, oauth2-proxy + Pocket ID (passkeys), Gitea, Hugo sites, and monitoring.",
     stack: ["Caddy", "Docker", "Gitea CI/CD", "Hugo", "oauth2-proxy", "Linux"],
     status: "live",
-    blogHref: "https://blog.mmastro.dev",
+    // blogHref: "https://blog.mmastro.dev",
   },
 ];
 
